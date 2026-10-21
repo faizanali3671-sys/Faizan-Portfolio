@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faizan Ali Portfolio</title>
+<meta name="description" content="Software development, graphic design and an AI assistant in one futuristic command center.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav><div class="wrap">
+  <a href="#top" class="logo"><img src="images/logo.svg" alt="" width="28" height="28">Faizan<b>.dev</b></a>
+  <ul>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#assistant">AI Assistant</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+  <div>
+    <span class="status"><i></i>Available for new projects</span>
+    <h1>I build software and design that feels <span>from the future.</span></h1>
+    <p>Software developer and graphic designer. I ship fast web apps, clean interfaces and brand visuals, all from one command center.</p>
+    <div class="btns">
+      <a class="btn main" href="#work">View my work</a>
+      <a class="btn" href="#contact">Hire me</a>
+    </div>
+  </div>
+  <div><img class="avatar" src="images/profile.svg" alt="Faizan Ali">
+  <div class="term" aria-label="Profile summary">
+    <header><i></i><i></i><i></i></header>
+    <pre id="typed"></pre>
+  </div></div>
+</div></header>
+
+<section id="skills"><div class="wrap">
+  <h2>What I do</h2>
+  <p class="sub">Two disciplines, one workflow. Code and design are built together so nothing gets lost in handoff.</p>
+  <div class="skills">
+    <div class="card"><h3>Software development</h3><p>Responsive websites, web apps and APIs built to be fast and easy to maintain.</p>
+      <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span><span>Node.js</span><span>Python</span></div></div>
+    <div class="card d"><h3>Graphic design</h3><p>Logos, social media creatives, posters and complete brand identities.</p>
+      <div class="tags"><span>Photoshop</span><span>Illustrator</span><span>Figma</span><span>Canva</span></div></div>
+    <div class="card"><h3>AI integration</h3><p>Chat assistants and automations that save time for you and your customers.</p>
+      <div class="tags"><span>LLM APIs</span><span>Chatbots</span><span>Automation</span></div></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <p class="sub">Replace these sample cards with your real projects. Each one has a title, a short line and a link.</p>
+  <div class="filters" role="tablist">
+    <button class="on" data-f="all">All</button>
+    <button data-f="dev">Development</button>
+    <button data-f="design">Design</button>
+  </div>
+  <div class="projects">
+    <article class="card proj" data-t="dev"><img class="thumb" src="images/p1.svg" alt="Project 1" loading="lazy"><h3>E-commerce Store</h3><p>Full online store with cart, checkout and an admin panel.</p><div class="tags"><span>React</span><span>Node.js</span></div><a class="more" href="#">View project</a></article>
+    <article class="card proj" data-t="dev"><img class="thumb" src="images/p2.svg" alt="Project 2" loading="lazy"><h3>Task Manager App</h3><p>Fast dashboard to plan, track and finish daily work.</p><div class="tags"><span>JavaScript</span><span>Firebase</span></div><a class="more" href="#">View project</a></article>
+    <article class="card proj" data-t="dev"><img class="thumb" src="images/p3.svg" alt="Project 3" loading="lazy"><h3>AI Chat Assistant</h3><p>Customer support bot trained on a business's own FAQs.</p><div class="tags"><span>Python</span><span>LLM API</span></div><a class="more" href="#">View project</a></article>
+    <article class="card proj d" data-t="design"><img class="thumb" src="images/p4.svg" alt="Project 4" loading="lazy"><h3>Brand Identity Kit</h3><p>Logo, colour palette and social templates for a startup.</p><div class="tags"><span>Illustrator</span><span>Figma</span></div><a class="more" href="#">View project</a></article>
+    <article class="card proj d" data-t="design"><img class="thumb" src="images/p5.svg" alt="Project 5" loading="lazy"><h3>Social Media Pack</h3><p>30 ready-to-post creatives with a consistent look.</p><div class="tags"><span>Photoshop</span><span>Canva</span></div><a class="more" href="#">View project</a></article>
+    <article class="card proj d" data-t="design"><img class="thumb" src="images/p6.svg" alt="Project 6" loading="lazy"><h3>Event Poster Series</h3><p>Bold posters designed for print and screen.</p><div class="tags"><span>Illustrator</span></div><a class="more" href="#">View project</a></article>
+  </div>
+</div></section>
+
+<section id="assistant"><div class="wrap ai">
+  <div>
+    <h2>Ask my AI assistant</h2>
+    <p class="sub">Quick answers about my skills, services and how to start a project. This demo runs in your browser with preset replies. Connect a real AI API later to make it fully live.</p>
+    <div class="quick">
+      <button>What services do you offer?</button>
+      <button>Which tools do you use?</button>
+      <button>How can I contact you?</button>
+    </div>
+  </div>
+  <div class="chat">
+    <div class="msgs" id="msgs"><div class="m bot">Hi, I'm Faizan's assistant. Ask me about his work.</div></div>
+    <form id="form"><input id="q" placeholder="Type your question" aria-label="Your question" autocomplete="off"><button>Send</button></form>
+  </div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap"><div class="box">
+  <h2>Let's build something</h2>
+  <p class="sub" style="margin:0 auto">Tell me about your project. I reply within a day.</p>
+  <div class="links">
+    <a class="btn main" href="mailto:youremail@example.com">Email me</a>
+    <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</div></div></section>
+
+<footer>&copy; <span id="yr"></span> Faizan Ali. All rights reserved.</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
